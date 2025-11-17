@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+.hero{
+height: 343px;
+background-image: url(images/banner.jpg);   
+background-repeat: no-repeat;
+background-attachment: center; 
+background-size: 100% 100%;
+background-position:left bottom;
+margin: -25px 0px 0px 0px;
+ text-align: center;
+}
+.places{
+    margin: 81px 34px 50px 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.Fort, .Derby, .krauseberryfarm{
+  width: 204px;
+  height: 232px;  
+  padding: 20px;
+}
+.guide{
+     width: 400px;
+    height: 294px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+.headshot{
+    background-image: url(images/Screenshot_20240910-081127.png);
+    height: 200px;
+    width: 248px;
+    background-repeat: no-repeat;
+background-attachment: center; 
+background-size: 100% 100%;
+border-radius: 10px;
+}
+.bio{
+    margin: 10px 10px 10px 10px;
+}
