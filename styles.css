@@ -1,22 +1,52 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.hero{
-height: 343px;
-background-image: url(images/banner.jpg);   
-background-repeat: no-repeat;
-background-attachment: center; 
-background-size: 100% 100%;
-background-position:left bottom;
-margin: -25px 0px 0px 0px;
- text-align: center;
+.hero {
+  height: 480px; /* you can remove this if you want natural height */
+  width: 100%;
+  background-image: url(images/banner.jpg);
+  background-size: cover; 
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+.hero-heading {
+  padding: 20px;
+  border-radius: 10px;
+  width: min(90%, 400px);
+  margin-bottom: 120px;
+}
+
+.hero-description {
+  padding: 20px;
+  border-radius: 10px;
+  width: min(50%, 350px);
+}
+#heading-banner{
+    background-color: #1D3557;
+padding: 5px 10px 5px 10px;;
+border-radius: 5px;
+color: white;
+}
+#paragraph-banner{
+    background-color: #457B9D;
+padding: 5px 10px 5px 10px;;
+border-radius: 5px;
+color: white;
+word-break: normal;
 }
 .places{
     margin: 81px 34px 50px 34px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F1FAEE;
 }
 img{
     width: 100px;
@@ -25,8 +55,8 @@ img{
 }
 .Fort, .Derby, .krauseberryfarm{
   width: 204px;
-  height: 232px;  
   padding: 20px;
+  margin-bottom: auto;
 }
 .guide{
      width: 400px;
@@ -35,7 +65,26 @@ img{
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: auto;
+    padding: 10px 20px 10px 20px ;
+    border-bottom: 6px solid navy;
+    margin-bottom: 50px;
+    margin-top: 200px;
+    background-color: #A8DADC;
+    border-radius: 10px;
+}
+@media (max-width: 480px) {
+  .places{
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .places{
+    flex-direction: column;
+}
+}
+.Fort,.Derby,.krauseberryfarm{
+    padding: 50px;
+  text-align: center;
 }
 .headshot{
     background-image: url(images/Screenshot_20240910-081127.png);
@@ -45,7 +94,12 @@ img{
 background-attachment: center; 
 background-size: 100% 100%;
 border-radius: 10px;
+margin-top: 25px;
 }
-.bio{
-    margin: 10px 10px 10px 10px;
+#guide-title{
+    margin-top: 2px;
+}
+.Bio{
+    text-align: center;
+    margin: 50px 20px 30px 20px;
 }
